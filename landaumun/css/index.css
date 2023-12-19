@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Norwester';
+  src: url('norwester/norwester.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    position: relative;
+    font-family: 'Norwester', sans-serif;
+}
+
+::selection{
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.heading .nofill{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background: url(../header.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    color: #fff;
+    font-size: 80px;
+    line-height: 100px;
+    margin-top: auto;
+}
+
+.content{
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.registrationbutton{
+  padding: 18px 78px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.registrationbutton:hover{
+  background: rgba(255,255,255,0.8);
+}
+
+.heading .vsmall{
+    line-height: 40px;
+    display: block;
+    font-size: 28px;
+}
+
+.heading .small{
+    line-height: 40px;
+    display: block;
+    font-size: 32px;
+}
+
+.registrationdiv{
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 1000px){
+  .heading .small{
+    line-height: 30px;
+    font-size: 28px;
+  }
+  .heading{
+    line-height: 80px;
+    font-size: 60px;
+  }
+  .heading .vsmall{
+    line-height: 30px;
+    font-size: 22px;
+  }
+  .registrationbutton{
+    padding: 15px 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .heading .small{
+    line-height: 24px;
+    font-size: 25px;
+  }
+  .heading{
+    line-height: 68px;
+    font-size: 45px;
+  }
+  .heading .vsmall{
+    line-height: 24px;
+    font-size: 20px;
+  }
+  .registrationbutton{
+    padding: 15px 46px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .heading .small{
+    line-height: 23px;
+    font-size: 23px;
+  }
+  .heading{
+    line-height: 67px;
+    font-size: 43px;
+  }
+  .heading .vsmall{
+    line-height: 23px;
+    font-size: 18px;
+  }
+  .registrationbutton{
+    padding: 15px 46px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .heading .small{
+    line-height: 22px;
+    font-size: 23px;
+  }
+  .heading{
+    line-height: 60px;
+    font-size: 36px;
+  }
+  .heading .vsmall{
+    line-height: 22px;
+    font-size: 18px;
+  }
+  .registrationbutton{
+    padding: 15px 46px;
+    font-size: 16px;
+  }
+}
